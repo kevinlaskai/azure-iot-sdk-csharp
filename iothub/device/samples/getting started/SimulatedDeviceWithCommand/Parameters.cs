@@ -12,13 +12,13 @@ namespace SimulatedDeviceWithCommand
     /// </summary>
     internal class Parameters
     {
-        [Option(
-            'c',
-            "DeviceConnectionString",
-            Required = true,
-             HelpText = "The IoT hub device connection string. This is available under the 'Devices' in the Azure portal." +
-            "\nDefaults to value of environment variable IOTHUB_DEVICE_CONNECTION_STRING.")]
-        public string DeviceConnectionString { get; set; } = Environment.GetEnvironmentVariable("IOTHUB_DEVICE_CONNECTION_STRING");
+        //[Option(
+        //    'c',
+        //    "DeviceConnectionString",
+        //    Required = true,
+        //     HelpText = "The IoT hub device connection string. This is available under the 'Devices' in the Azure portal." +
+        //    "\nDefaults to value of environment variable IOTHUB_DEVICE_CONNECTION_STRING.")]
+        public string DeviceConnectionString { get; set; } = "HostName=Lab6-1948515.azure-devices.net;DeviceId=simDevice;SharedAccessKey=lhrSnTUVUcL45i8zh1nQXzYblKvETm7+3+2EDzNX53o=";
 
         [Option(
             't',
